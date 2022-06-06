@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 RUN go build -o ds-output .
 EXPOSE 9090
-CMD [ "./ds-output" ]
+ENTRYPOINT [ "./ds-output" ]
