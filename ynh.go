@@ -13,10 +13,6 @@ func main() {
 	}
 
 }
-func timer(name string) {
-	time.Sleep(1000)
-	fmt.Println("Name is " + name)
-}
 func welcome(res http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(res, "Welcome")
 }
